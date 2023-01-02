@@ -82,13 +82,19 @@
             grid-template-columns: auto auto;
             align-items: center;
             padding: 10px 50px;
+            row-gap: 20px;
+            box-shadow: 0px 3px 2px rgb(197, 193, 193);
+            z-index: 30;
         }
         .searchbar {
             display: flex;
+            gap: 15px;
         }
         .searchbar img {
             width: 24px;
             height: 24px;
+            position: relative;
+            top: 3px;
         }
         .searchbar input {
             width: 100%;
@@ -116,7 +122,43 @@
             height: 50px;
             border-radius: 50%;
         }
-        
+        .welcome img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+        .welcome div {
+            display: flex;
+            flex-direction: column;
+            font-weight: 700;
+
+        }
+        .welcome2 div:nth-child(2) {
+            font-size: 20px;
+        }
+        .welcome {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .buttons {
+            display: flex;
+            gap: 25px;
+            justify-self: end;
+        }
+        .buttons div {
+            border-radius: 20px;
+            background-color: #0ea5e9;
+            box-sizing: border-box;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            
+        }
         
     </style>
 </head>
@@ -178,8 +220,18 @@
                 <img src="slike/AHAAHHAHA.jpg">
                 <div>Mihajlo Mojic</div>
             </div>
-            <div class="welcome"></div>
-            <div class="buttons"></div>
+            <div class="welcome">
+                <img src="slike/AHAAHHAHA.jpg">
+                <div class="welcome2">
+                    <div>Hi there,</div>
+                    <div>Mihajlo Mojic @mojic</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div>New</div>
+                <div>Upload</div>
+                <div>Share</div>
+            </div>
         </div>
         <div class="main">
             
