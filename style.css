@@ -155,22 +155,24 @@ div[class^="sbitem"] div:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
+    padding: 50px 50px;
 }
 .karte {
     grid-row: 1/3;
-    grid-template: 1;
+    grid-column: 1;
     display: flex;
     flex-direction: column;
 }
 .anoun {
     grid-row: 1;
-    grid-template: 2;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
+    gap: 25px;
 }
 .trending {
     grid-row: 2;
-    grid-template: 2;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
 }
@@ -185,6 +187,8 @@ div[class^="sbitem"] div:nth-child(1) {
 .anoun2 {
     display: flex;
     flex-direction: column;
+    padding: 40px 30px;
+    justify-content: space-between;
 }
 .trending2 {
     display: flex;
@@ -193,4 +197,44 @@ div[class^="sbitem"] div:nth-child(1) {
 .trending2 > div {
     display: flex;
     
+}
+.karte > div[class^="c"] {
+    background-color: white;
+}
+.anoun2{
+    background-color: white;
+    width: 350px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 100%;
+}
+.trending2 {
+    background-color: white;
+}
+
+
+.anoun > div:nth-child(1){
+    font-size: 22px;
+    font-weight: 580;
+}
+.bold {
+    font-weight: 650;
+}
+.anoun2 > div:nth-child(2) {
+    
+    border-top: 1px solid gray ;
+    border-bottom: 1px solid gray;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+}
+.anoun2 > div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
 }
